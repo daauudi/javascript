@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+  const dogs = [];
+  for (let i = 0; i < 6; i++) {
+    dogs.push(prompt(`Enter dog name ${i + 1}:`));
+  }
+  dogs.sort().reverse();
+
+  document.write("<ul>");
+  for (let dog of dogs) {
+    document.write(`<li>${dog}</li>`);
+  }
+  document.write("</ul>");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function rollDice() {
+    return Math.floor(Math.random() * 6) + 1;
+}
+
+let rolls = [];
+let result;
+do { result = rollDice();
+    rolls.push(result);
+} while (result !== 6);
+
+document.write("<ul>");
+for (let roll of rolls) { document.write("<li>" + roll + "</li>");
+} document.write("</ul>");
+
+</script>
+</body>
+</html>

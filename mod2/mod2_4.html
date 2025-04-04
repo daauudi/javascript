@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+    let numbers = [];
+    while(true) {
+        let input = prompt("enter a number (0 to stop):");
+        let num = parseFloat(input);
+        if(num === 0) break;
+        numbers.push(num);
+    }
+
+    numbers.sort((a,b) => b-a);
+    document.write("Numbers from largest to smallest:<br>" + numbers.join(", "));
+</script>
+</body>
+</html>

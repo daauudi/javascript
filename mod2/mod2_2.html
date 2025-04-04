@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    const num= Number(prompt("how many participants?"));
+
+    const names = [];
+     for (let i = 0; i < num; i++) { names.push(prompt(`name of participant ${i + 1}:`));
+  }
+
+  names.sort();
+  document.write("<ol>");
+  names.forEach(name => document.write(`<li>${name}</li>`));
+  document.write("</ol>");
+</script>
+</body>
+</html>

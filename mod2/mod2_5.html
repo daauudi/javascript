@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    let numbers = [];
+    while (true) {
+        let input = prompt("enter a number:");
+        let num = Number(input);
+        if (numbers.includes(num)) {
+            alert("number already given!");
+            break;
+        }
+        numbers.push(num);
+    }
+    numbers.sort((a,b) => a-b);
+    document.write("numbers in order: " + numbers.join(", "));
+</script>
+</body>
+</html>
